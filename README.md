@@ -23,6 +23,22 @@ Or install it yourself as:
 Each component is activated individually by loading the corresponding rake file into your deploy.rb.
 Depending on the component, additional configuration may be necessary.
 
+### Deploytags
+
+Load the rake file:
+
+```ruby
+load 'cap3_addons/tasks/deploytags.rake'
+```
+Then, configure these tasks to be run:
+
+```
+after :deploy, "deploytags:tag"
+after :deploy, "deploytags:clean"
+```
+
+Known issues: very noisy.
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/cap3_addons/fork )
