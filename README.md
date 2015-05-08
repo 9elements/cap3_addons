@@ -41,6 +41,21 @@ When cleaning tags, some hard-coded assumptions are made about how many tags and
 
 Known issues: very noisy.
 
+### Check branch
+
+Load the rake file:
+
+```ruby
+load 'cap3_addons/tasks/checkbranch.rake'
+```
+Then, configure these tasks to be run:
+
+```
+before :deploy, :checkbranch
+```
+
+Comparison is done against the same branch in the "origin" remote.
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/cap3_addons/fork )
