@@ -37,6 +37,8 @@ after :deploy, "deploytags:tag"
 after :deploy, "deploytags:clean"
 ```
 
+When cleaning tags, some hard-coded assumptions are made about how many tags and from what time you want to keep. Tags considered obsolete are removed locally and from the remote "origin".
+
 Known issues: very noisy.
 
 ## Contributing
