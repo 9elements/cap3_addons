@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Thomas Stratmann"]
   spec.email         = ["thomas.stratmann@9elements.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Additions that can be pulled into your capistrano 3 setup}
+  spec.description   = %q{Additions that can be pulled into your capistrano 3 setup}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
