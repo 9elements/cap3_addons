@@ -4,7 +4,7 @@ Additions that can be pulled into your capistrano 3 setup.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your Rails application's Gemfile, inside the `:development` group:
 
 ```ruby
 gem 'cap3_addons'
@@ -14,14 +14,15 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install cap3_addons
-
 ## Usage
 
-Each component is activated individually by loading the corresponding rake file into your deploy.rb.
-Depending on the component, additional configuration may be necessary.
+This gem provides different pieces of functionality that is each being made
+available by loading a Rake file from you `deploy.rb` and using the provided tasks.
+This way, when new components are added to this gem, they will not interfere with you existing
+workflow.
+
+The added tasks can be made dependencies of existing tasks, or `after` hooks can be used for them.
+Some tasks require additional configuration. See the following sections for details.
 
 ### Deploytags
 
